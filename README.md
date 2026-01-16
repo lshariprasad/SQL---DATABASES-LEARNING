@@ -1,180 +1,156 @@
-📊 SQL Complete Guide & Practice Repository
-A comprehensive SQL learning and practice repository covering everything from MySQL installation to advanced SQL concepts, data engineering fundamentals, and Python–MySQL connectivity.
-This repository is designed for students, beginners, and aspiring data engineers who want structured, hands-on SQL knowledge.
+# 📊 SQL Complete Guide & Practice Repository
+
+A comprehensive **SQL learning and practice repository** covering everything from **MySQL installation** to **advanced SQL concepts**, **data engineering fundamentals**, and **Python–MySQL connectivity**.
+
+This repository is designed for **students, beginners, and aspiring data engineers** who want **structured, hands-on SQL knowledge** with real-world applications.
+
+---
+
+## 📌 What This Repository Covers
+
+### 🔹 SQL Foundations
+- Introduction to SQL & Databases  
+- SQL Architecture Overview  
+- SQL Data Types  
+- SQL Keywords & Syntax  
 
-📌 What This Repository Covers
-🔹 SQL Foundations
-Introduction to SQL & Databases
+---
 
-SQL Architecture Overview
+### 🔹 MySQL Setup & Environment
+- MySQL Installation (Windows)  
+- MySQL Installation (Linux)  
+- Working with MySQL using:
+  - Command Prompt (CMD)
+  - Jupyter Notebook (SQL Notebook)
 
-SQL Data Types
+---
 
-SQL Keywords & Syntax
+### 🔹 SQL Commands
+- **DDL** – CREATE, ALTER, DROP, TRUNCATE  
+- **DML** – INSERT, UPDATE, DELETE  
+- **DCL** – GRANT, REVOKE  
+- **TCL** – COMMIT, ROLLBACK, SAVEPOINT  
 
-🔹 MySQL Setup & Environment
-MySQL Installation (Windows)
+---
 
-MySQL Installation (Linux)
+### 🔹 CRUD Operations
+- Create  
+- Read  
+- Update  
+- Delete  
 
-Working with MySQL using:
+---
 
-Command Prompt (CMD)
+### 🔹 Table Design & Constraints
+- Different Types of `CREATE TABLE`  
+- `ALTER TABLE` & `ALTER COLUMN`  
+- `WHERE` Clause  
+- SQL Constraints:
+  - PRIMARY KEY  
+  - FOREIGN KEY  
+  - UNIQUE  
+  - CHECK  
+  - DEFAULT  
+  - NOT NULL  
 
-Jupyter Notebook (SQL Notebook)
+---
 
-🔹 SQL Commands
-DDL – CREATE, ALTER, DROP, TRUNCATE
+### 🔹 Keys in SQL
+- Minimal Key  
+- Natural Key  
+- Surrogate Key  
+- Super Key  
+- Candidate Key  
 
-DML – INSERT, UPDATE, DELETE
+---
 
-DCL – GRANT, REVOKE
+### 🔹 Querying & Filtering
+- AND, OR, IN, NOT IN  
+- Aliases  
+- CASE WHEN  
+- NULL Handling  
+- String Functions  
+- Date & Time Functions  
+- Regular Expressions (REGEX)  
 
-TCL – COMMIT, ROLLBACK, SAVEPOINT
+---
 
-🔹 CRUD Operations
-Create
+### 🔹 Advanced SQL
+- Subqueries  
+- Views  
+- Joins (All Types)  
+- Window Functions & Their Types  
+- UNION & UNION ALL  
+- Indexing  
+- EXPLAIN & ANALYZE  
+- Partitioning  
 
-Read
+---
 
-Update
+### 🔹 Transactions & Security
+- Commit & Rollback  
+- Grant & Revoke  
+- ACID Properties  
 
-Delete
+---
 
-🔹 Table Design & Constraints
-Different Types of CREATE TABLE
+### 🔹 Data Engineering Concepts
+- Normalization (All Normal Forms)  
+- SCD – Slowly Changing Dimensions  
+- Data Modeling Basics  
 
-ALTER TABLE & ALTER COLUMN
+---
 
-WHERE Clause
+### 🔹 Python & SQL
+- Python JDBC / MySQL Connectivity  
+- Running SQL using Python  
+- SQL Execution via Jupyter Notebook  
 
-SQL Constraints:
+---
 
-PRIMARY KEY
+### 🔹 Projects
+- 4 Real-World Data Engineering Projects  
 
-FOREIGN KEY
+---
 
-UNIQUE
+## 🛠 MySQL Installation (Windows)
 
-CHECK
+1. Download **MySQL Installer (Community Edition)** from the official website:  
+   👉 https://dev.mysql.com/downloads/installer/
 
-DEFAULT
+2. Choose **MySQL Installer for Windows**
 
-NOT NULL
+3. During setup:
+   - Select **Developer Default** or **Server Only**
+   - Set a **root password** (remember it)
 
-🔹 Keys in SQL
-Minimal Key
-
-Natural Key
-
-Surrogate Key
-
-Super Key
-
-Candidate Key
-
-🔹 Querying & Filtering
-AND, OR, IN, NOT IN
-
-Aliases
-
-CASE WHEN
-
-NULL Handling
-
-String Functions
-
-Date & Time Functions
-
-Regular Expressions (REGEX)
-
-🔹 Advanced SQL
-Subqueries
-
-Views
-
-Joins (All Types)
-
-Window Functions & Types
-
-UNION & UNION ALL
-
-Indexing
-
-EXPLAIN & ANALYZE
-
-Partitioning
-
-🔹 Transactions & Security
-Commit & Rollback
-
-Grant & Revoke
-
-ACID Properties
-
-🔹 Data Engineering Concepts
-Normalization (All Normal Forms)
-
-SCD – Slowly Changing Dimensions
-
-Data Modeling Basics
-
-🔹 Python & SQL
-Python JDBC / MySQL Connectivity
-
-Running SQL using Python
-
-SQL via Jupyter Notebook
-
-🔹 Projects
-4 Real-World Data Engineering Projects
-
-🛠 MySQL Installation (Windows)
-Download MySQL Installer from the official site:
-👉 https://dev.mysql.com/downloads/installer/
-
-Choose MySQL Installer for Windows (Community)
-
-During setup:
-
-Select Developer Default or Server Only
-
-Set a root password (remember it)
-
-Default credentials:
-
-text
-Copy code
+4. Default credentials:
 Username: root
 Password: (Set by you during installation)
-Verify installation:
 
-bash
-Copy code
+5. Verify installation:
+```bash
 mysql -u root -p
-💻 Working with MySQL (CMD)
-You can directly use MySQL from Command Prompt:
+💻 Working with MySQL (Command Prompt)
+You can directly work with MySQL using Windows CMD:
 
 bash
-Copy code
 mysql -u root -p
 Basic commands:
 
 sql
-Copy code
 SHOW DATABASES;
 USE database_name;
 SHOW TABLES;
 📓 SQL with Jupyter Notebook (Recommended)
-
 Step 1: Install Python
 Download Python from:
 👉 https://www.python.org/downloads/
-✔️ Check Add Python to PATH
 
-Step 2: Create Virtual Environment
+✔️ Make sure to check Add Python to PATH during installation.
+
+Step 2: Create a Virtual Environment
 bash
-Copy code
 mkdir sql_notebook
 cd sql_notebook
 python -m venv env
@@ -182,7 +158,6 @@ env\Scripts\activate
 
 Step 3: Install Required Packages
 bash
-Copy code
 pip install --upgrade pip
 pip install notebook
 pip install ipython-sql
@@ -191,18 +166,16 @@ pip install mysql-connector-python
 
 Step 4: Start Jupyter Notebook
 bash
-Copy code
 jupyter notebook
 
-Step 5: Connect MySQL in Notebook
+Step 5: Connect MySQL in Jupyter
 sql
 Copy code
 %load_ext sql
 %sql mysql+mysqlconnector://root:YOUR_PASSWORD@localhost/test
 
-📂 Repository Structure (Suggested)
+📂 Suggested Repository Structure
 text
-Copy code
 sql-repository/
 │
 ├── basics/
@@ -217,20 +190,18 @@ sql-repository/
 ├── projects/
 └── README.md
 📬 Support & Contact
-If you face any issues, feel free to reach out:
+If you face any issues or have queries, feel free to reach out:
 
 📧 Email: 06hariumaraja@gmail.com
+
 📧 Email: lshariprasad1410@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/lshariprasad1410/
-
-(Replace with your actual contact details)
 
 📜 License
 This project is licensed under the MIT License.
 
 pgsql
-Copy code
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -238,7 +209,7 @@ of this software and associated documentation files to deal in the Software
 without restriction, including without limitation the rights to use, copy,
 modify, merge, publish, distribute, sublicense, and/or sell copies.
 ⭐ Final Note
-This repository is learning-focused, industry-aligned, and suitable for:
+This repository is learning-focused, industry-aligned, and ideal for:
 
 SQL Beginners
 
@@ -246,6 +217,6 @@ Data Engineering Aspirants
 
 Placement & Interview Preparation
 
-Academic & Self-Learning Use
+Academic & Self-Learning
 
-If you find this helpful, star ⭐ the repository and keep learning 🚀
+If you find this repository useful, star ⭐ the project and keep learning 🚀
