@@ -1,1 +1,251 @@
-# SQL---DATABASES-LEARNING
+📊 SQL Complete Guide & Practice Repository
+A comprehensive SQL learning and practice repository covering everything from MySQL installation to advanced SQL concepts, data engineering fundamentals, and Python–MySQL connectivity.
+This repository is designed for students, beginners, and aspiring data engineers who want structured, hands-on SQL knowledge.
+
+📌 What This Repository Covers
+🔹 SQL Foundations
+Introduction to SQL & Databases
+
+SQL Architecture Overview
+
+SQL Data Types
+
+SQL Keywords & Syntax
+
+🔹 MySQL Setup & Environment
+MySQL Installation (Windows)
+
+MySQL Installation (Linux)
+
+Working with MySQL using:
+
+Command Prompt (CMD)
+
+Jupyter Notebook (SQL Notebook)
+
+🔹 SQL Commands
+DDL – CREATE, ALTER, DROP, TRUNCATE
+
+DML – INSERT, UPDATE, DELETE
+
+DCL – GRANT, REVOKE
+
+TCL – COMMIT, ROLLBACK, SAVEPOINT
+
+🔹 CRUD Operations
+Create
+
+Read
+
+Update
+
+Delete
+
+🔹 Table Design & Constraints
+Different Types of CREATE TABLE
+
+ALTER TABLE & ALTER COLUMN
+
+WHERE Clause
+
+SQL Constraints:
+
+PRIMARY KEY
+
+FOREIGN KEY
+
+UNIQUE
+
+CHECK
+
+DEFAULT
+
+NOT NULL
+
+🔹 Keys in SQL
+Minimal Key
+
+Natural Key
+
+Surrogate Key
+
+Super Key
+
+Candidate Key
+
+🔹 Querying & Filtering
+AND, OR, IN, NOT IN
+
+Aliases
+
+CASE WHEN
+
+NULL Handling
+
+String Functions
+
+Date & Time Functions
+
+Regular Expressions (REGEX)
+
+🔹 Advanced SQL
+Subqueries
+
+Views
+
+Joins (All Types)
+
+Window Functions & Types
+
+UNION & UNION ALL
+
+Indexing
+
+EXPLAIN & ANALYZE
+
+Partitioning
+
+🔹 Transactions & Security
+Commit & Rollback
+
+Grant & Revoke
+
+ACID Properties
+
+🔹 Data Engineering Concepts
+Normalization (All Normal Forms)
+
+SCD – Slowly Changing Dimensions
+
+Data Modeling Basics
+
+🔹 Python & SQL
+Python JDBC / MySQL Connectivity
+
+Running SQL using Python
+
+SQL via Jupyter Notebook
+
+🔹 Projects
+4 Real-World Data Engineering Projects
+
+🛠 MySQL Installation (Windows)
+Download MySQL Installer from the official site:
+👉 https://dev.mysql.com/downloads/installer/
+
+Choose MySQL Installer for Windows (Community)
+
+During setup:
+
+Select Developer Default or Server Only
+
+Set a root password (remember it)
+
+Default credentials:
+
+text
+Copy code
+Username: root
+Password: (Set by you during installation)
+Verify installation:
+
+bash
+Copy code
+mysql -u root -p
+💻 Working with MySQL (CMD)
+You can directly use MySQL from Command Prompt:
+
+bash
+Copy code
+mysql -u root -p
+Basic commands:
+
+sql
+Copy code
+SHOW DATABASES;
+USE database_name;
+SHOW TABLES;
+📓 SQL with Jupyter Notebook (Recommended)
+
+Step 1: Install Python
+Download Python from:
+👉 https://www.python.org/downloads/
+✔️ Check Add Python to PATH
+
+Step 2: Create Virtual Environment
+bash
+Copy code
+mkdir sql_notebook
+cd sql_notebook
+python -m venv env
+env\Scripts\activate
+
+Step 3: Install Required Packages
+bash
+Copy code
+pip install --upgrade pip
+pip install notebook
+pip install ipython-sql
+pip install prettytable==0.7.2
+pip install mysql-connector-python
+
+Step 4: Start Jupyter Notebook
+bash
+Copy code
+jupyter notebook
+
+Step 5: Connect MySQL in Notebook
+sql
+Copy code
+%load_ext sql
+%sql mysql+mysqlconnector://root:YOUR_PASSWORD@localhost/test
+
+📂 Repository Structure (Suggested)
+text
+Copy code
+sql-repository/
+│
+├── basics/
+├── ddl_dml_dcl_tcl/
+├── constraints_and_keys/
+├── joins_and_subqueries/
+├── window_functions/
+├── indexes_and_performance/
+├── transactions_and_security/
+├── normalization_and_scd/
+├── python_mysql/
+├── projects/
+└── README.md
+📬 Support & Contact
+If you face any issues, feel free to reach out:
+
+📧 Email: 06hariumaraja@gmail.com
+📧 Email: lshariprasad1410@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/lshariprasad1410/
+
+(Replace with your actual contact details)
+
+📜 License
+This project is licensed under the MIT License.
+
+pgsql
+Copy code
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies.
+⭐ Final Note
+This repository is learning-focused, industry-aligned, and suitable for:
+
+SQL Beginners
+
+Data Engineering Aspirants
+
+Placement & Interview Preparation
+
+Academic & Self-Learning Use
+
+If you find this helpful, star ⭐ the repository and keep learning 🚀
