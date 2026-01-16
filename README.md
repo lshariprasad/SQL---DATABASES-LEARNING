@@ -3,6 +3,7 @@
 A comprehensive **SQL learning and practice repository** covering everything from **MySQL installation** to **advanced SQL concepts**, **data engineering fundamentals**, and **Python–MySQL connectivity**.
 
 This repository is designed for **students, beginners, and aspiring data engineers** who want **structured, hands-on SQL knowledge** with real-world applications.
+
 ---
 
 ## 📌 What This Repository Covers
