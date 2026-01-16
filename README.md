@@ -184,21 +184,6 @@ sql
 %sql mysql+mysqlconnector://root:YOUR_PASSWORD@localhost/test
 ```
 
-📂 Suggested Repository Structure
-text
-sql-repository/
-│
-├── basics/
-├── ddl_dml_dcl_tcl/
-├── constraints_and_keys/
-├── joins_and_subqueries/
-├── window_functions/
-├── indexes_and_performance/
-├── transactions_and_security/
-├── normalization_and_scd/
-├── python_mysql/
-├── projects/
-└── README.md
 📬 Support & Contact
 If you face any issues or have queries, feel free to reach out:
 
