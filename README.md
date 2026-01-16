@@ -131,17 +131,23 @@ Password: (Set by you during installation)
 5. Verify installation:
 ```bash
 mysql -u root -p
+
+```
 💻 Working with MySQL (Command Prompt)
 You can directly work with MySQL using Windows CMD:
 
-bash
+```bash
 mysql -u root -p
-Basic commands:
+```
 
+Basic commands:
+```bash
 sql
 SHOW DATABASES;
 USE database_name;
 SHOW TABLES;
+```
+
 📓 SQL with Jupyter Notebook (Recommended)
 Step 1: Install Python
 Download Python from:
@@ -150,29 +156,33 @@ Download Python from:
 ✔️ Make sure to check Add Python to PATH during installation.
 
 Step 2: Create a Virtual Environment
-bash
+```bash
 mkdir sql_notebook
 cd sql_notebook
 python -m venv env
 env\Scripts\activate
+```
 
 Step 3: Install Required Packages
-bash
+```bash
 pip install --upgrade pip
 pip install notebook
 pip install ipython-sql
 pip install prettytable==0.7.2
 pip install mysql-connector-python
+```
 
 Step 4: Start Jupyter Notebook
-bash
+```bash
 jupyter notebook
+```
 
 Step 5: Connect MySQL in Jupyter
+```
 sql
-Copy code
 %load_ext sql
 %sql mysql+mysqlconnector://root:YOUR_PASSWORD@localhost/test
+```
 
 📂 Suggested Repository Structure
 text
@@ -208,15 +218,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files to deal in the Software
 without restriction, including without limitation the rights to use, copy,
 modify, merge, publish, distribute, sublicense, and/or sell copies.
-⭐ Final Note
-This repository is learning-focused, industry-aligned, and ideal for:
-
-SQL Beginners
-
-Data Engineering Aspirants
-
-Placement & Interview Preparation
-
-Academic & Self-Learning
 
 If you find this repository useful, star ⭐ the project and keep learning 🚀
