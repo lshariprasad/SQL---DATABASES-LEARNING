@@ -193,15 +193,4 @@ If you face any issues or have queries, feel free to reach out:
 
 🔗 LinkedIn: https://www.linkedin.com/in/lshariprasad1410/
 
-📜 License
-This project is licensed under the MIT License.
-
-pgsql
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files to deal in the Software
-without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies.
-
 If you find this repository useful, star ⭐ the project and keep learning 🚀
